@@ -1,0 +1,13 @@
+| **Feature**           | **Artificial Intelligence (AI)**          | **Agentic AI**            | **Autonomous Agentic AI**              |
+| --------------------- | ----------------------------------------- | ------------------------- | -------------------------------------- |
+| **Goal**              | Make intelligent predictions or decisions | Complete multi-step tasks | Achieve end-to-end goals independently |
+| **Reasoning**         | Limited                                   | Yes                       | Advanced                               |
+| **Planning**          | No                                        | Yes                       | Dynamic                                |
+| **Tool Usage**        | Rare                                      | Yes                       | Yes (multiple coordinated tools)       |
+| **Memory**            | Limited                                   | Yes                       | Persistent                             |
+| **Learning**          | From training data                        | From interactions         | Continuous adaptation                  |
+| **Human Involvement** | High                                      | Low                       | Minimal                                |
+| **Autonomy**          | Low                                       | High                      | Very High                              |
+
+===========
+
