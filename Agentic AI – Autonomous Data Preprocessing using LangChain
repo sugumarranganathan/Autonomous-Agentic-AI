@@ -1,0 +1,107 @@
+Agentic AI – Autonomous Data Preprocessing using LangChain" refers to building an AI system where autonomous agents perform data preprocessing tasks with minimal human intervention, using the LangChain framework to orchestrate the workflow.
+
+What is Agentic AI?
+
+Agentic AI is an AI system that can:
+
+Understand a goal
+Plan the steps to achieve it
+Make decisions
+Use tools
+Execute tasks autonomously
+Ask for human approval only when necessary
+
+Unlike a traditional script, an Agentic AI system can decide what to do next based on the data it receives.
+
+=========
+
+What is Autonomous Data Preprocessing?
+
+Before training a machine learning model or performing analysis, raw data must be cleaned and prepared.
+
+Normally, a data scientist manually performs tasks like:
+
+Removing missing values
+Eliminating duplicate records
+Fixing inconsistent formats
+Encoding categorical variables
+Scaling numerical features
+Detecting outliers
+Creating new features
+
+With Agentic AI, these steps are performed automatically by specialized AI agents.
+
+========
+
+Role of LangChain
+
+LangChain acts as the orchestrator that connects multiple agents, LLMs, tools, and memory.
+
+It allows different agents to communicate and execute preprocessing tasks in sequence.
+
+Example Workflow
+-----------------
+
+             CSV Dataset
+                  │
+                  ▼
+        Dataset Loader Agent
+                  │
+                  ▼
+       Data Profiler Agent
+       (Analyzes the dataset)
+                  │
+                  ▼
+      Missing Value Agent
+      (Fill or remove NULL values)
+                  │
+                  ▼
+       Duplicate Removal Agent
+                  │
+                  ▼
+      Outlier Detection Agent
+                  │
+                  ▼
+      Data Cleaning Agent
+                  │
+                  ▼
+      Feature Engineering Agent
+                  │
+                  ▼
+      Encoding & Scaling Agent
+                  │
+                  ▼
+      Validation Agent
+                  │
+                  ▼
+        Human Approval (Optional)
+                  │
+                  ▼
+      Clean Dataset Ready for ML
+
+=======
+
+Responsibilities of Each Agent
+------------------------------
+
+
+| Agent                     | Responsibility                                             |
+| ------------------------- | ---------------------------------------------------------- |
+| Dataset Loader Agent      | Loads CSV, Excel, SQL, or API data                         |
+| Data Profiling Agent      | Checks columns, data types, statistics, and missing values |
+| Missing Value Agent       | Detects and fills or removes missing data                  |
+| Duplicate Removal Agent   | Finds and removes duplicate rows                           |
+| Outlier Detection Agent   | Identifies abnormal values using statistical methods       |
+| Data Cleaning Agent       | Corrects formatting issues and invalid entries             |
+| Feature Engineering Agent | Creates useful new features from existing data             |
+| Encoding Agent            | Converts categorical data into numeric form                |
+| Scaling Agent             | Normalizes or standardizes numerical features              |
+| Validation Agent          | Ensures the processed data is consistent and ready for use |
+| Human Approval Agent      | Allows manual review before finalizing the dataset         |
+
+
+=============
+
+
+
+
