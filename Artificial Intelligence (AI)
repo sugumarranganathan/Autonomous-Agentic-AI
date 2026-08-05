@@ -1,0 +1,26 @@
+Artificial Intelligence (AI)
+Simple Definition
+
+Artificial Intelligence (AI) is the ability of a computer system to learn, analyze data, recognize patterns, and make intelligent decisions to solve a specific problem.
+
+Workflow
+Input
+   │
+   ▼
+Analyze Data
+   │
+   ▼
+Predict / Decide
+   │
+   ▼
+Output
+
+Real-Time Examples
+
+| **Example**                      | **How it Works**                                                              |
+| -------------------------------- | ----------------------------------------------------------------------------- |
+| **Email Spam Detection**         | AI analyzes email content and predicts whether it is spam or not.             |
+| **Netflix Movie Recommendation** | AI studies viewing history and recommends movies the user is likely to enjoy. |
+
+
+========
