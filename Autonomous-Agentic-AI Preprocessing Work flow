@@ -1,0 +1,46 @@
+Autonomous-Agentic-AI Preprocessing Work flow 
+---------------------------------------------
+
+LangChain acts as the orchestrator that connects multiple agents, LLMs, tools, and memory.
+
+It allows different agents to communicate and execute preprocessing tasks in sequence.
+
+===================
+
+
+             CSV Dataset
+                  │
+                  ▼
+        Dataset Loader Agent
+                  │
+                  ▼
+       Data Profiler Agent
+       (Analyzes the dataset)
+                  │
+                  ▼
+      Missing Value Agent
+      (Fill or remove NULL values)
+                  │
+                  ▼
+       Duplicate Removal Agent
+                  │
+                  ▼
+      Outlier Detection Agent
+                  │
+                  ▼
+      Data Cleaning Agent
+                  │
+                  ▼
+      Feature Engineering Agent
+                  │
+                  ▼
+      Encoding & Scaling Agent
+                  │
+                  ▼
+      Validation Agent
+                  │
+                  ▼
+        Human Approval (Optional)
+                  │
+                  ▼
+      Clean Dataset Ready for ML
