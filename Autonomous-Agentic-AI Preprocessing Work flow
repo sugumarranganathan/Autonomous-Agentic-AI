@@ -44,3 +44,46 @@ It allows different agents to communicate and execute preprocessing tasks in seq
                   │
                   ▼
       Clean Dataset Ready for ML
+
+
+==================
+
+How LangChain Connects Them
+---------------------------
+
+User Uploads Dataset
+          │
+          ▼
+ LangChain Controller
+          │
+ ┌────────┴─────────┐
+ ▼                  ▼
+Data Profiler    Missing Value Agent
+        │
+        ▼
+Duplicate Agent
+        │
+        ▼
+Outlier Agent
+        │
+        ▼
+Cleaning Agent
+        │
+        ▼
+Feature Engineering Agent
+        │
+        ▼
+Encoding Agent
+        │
+        ▼
+Scaling Agent
+        │
+        ▼
+Validation Agent
+        │
+        ▼
+Processed Dataset
+
+========
+
+
