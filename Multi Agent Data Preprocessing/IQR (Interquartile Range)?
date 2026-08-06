@@ -1,0 +1,145 @@
+IQR (Interquartile Range)?
+=======
+
+Why Use IQR?
+
+| Advantage                             | Reason                                            |
+| ------------------------------------- | ------------------------------------------------- |
+| Works well for skewed data            | Not affected much by extreme values               |
+| Easy to calculate                     | Uses simple quartiles                             |
+| Widely used                           | Common in data preprocessing and machine learning |
+| No assumption about data distribution | Works without assuming normality                  |
+
+============
+
+IQR (Interquartile Range) is a statistical method used to detect outliers (unusually high or low values) in numerical data.
+
+What is IQR?
+
+IQR measures the spread of the middle 50% of the data.
+
+Formula:
+
+IQR = Q3 − Q1
+
+Where:
+
+Q1 (First Quartile) = 25th percentile
+Q2 (Median) = 50th percentile
+Q3 (Third Quartile) = 75th percentile
+Example
+
+Suppose the values are:
+
+10, 12, 15, 18, 20, 22, 25, 28, 30
+Step 1: Find Quartiles
+Quartile	Value
+Q1	15
+Median (Q2)	20
+Q3	28
+Step 2: Calculate IQR
+IQR = Q3 − Q1
+
+IQR = 28 − 15
+
+IQR = 13
+Step 3: Calculate Lower and Upper Bounds
+
+Lower Bound
+
+Q1 − 1.5 × IQR
+
+15 − (1.5 × 13)
+
+15 − 19.5
+
+= -4.5
+
+Upper Bound
+
+Q3 + 1.5 × IQR
+
+28 + 19.5
+
+= 47.5
+Step 4: Detect Outliers
+
+Any value
+
+< -4.5
+
+or
+
+> 47.5
+
+is considered an outlier.
+
+Example with an Outlier
+
+Dataset:
+
+10
+12
+15
+18
+20
+22
+25
+28
+30
+100
+
+The value 100 is much larger than the upper bound (47.5), so it is an outlier.
+
+Visual Representation
+Small Values                         Large Values
+
+10 12 15 18 20 22 25 28 30           100
+│        │        │       │            │
+│        │        │       │            │
+Min      Q1     Median   Q3        Outlier
+
+=========
+
+How IQR Works in Your Project
+
+
+| quantity_sold |
+| ------------: |
+|            52 |
+|            49 |
+|            55 |
+|            58 |
+|            60 |
+|            61 |
+|            63 |
+|            65 |
+|           300 |
+
+
+The value 300 is much higher than the rest.
+
+Your code calculates:
+
+Q1 = df["quantity_sold"].quantile(0.25)
+
+Q3 = df["quantity_sold"].quantile(0.75)
+
+IQR = Q3 - Q1
+
+Then:
+
+lower = Q1 - 1.5 * IQR
+
+upper = Q3 + 1.5 * IQR
+
+If:
+
+df["quantity_sold"] > upper
+
+then 300 is identified as an outlier.
+
+==========
+
+
+
