@@ -1,0 +1,125 @@
+An outlier is a number that is very different from all the other numbers.
+
+or
+
+An outlier is a value that is much bigger or much smaller than all the other values.
+
+Think of it as the odd one out.
+
+=========
+
+The odd one out" in a group of numbers. That's exactly what your preprocessing task is trying to find before using the data for analysis or machine learning.
+
+========
+
+Daily Ice Cream Sales
+
+A shop sells:
+
+| Day       | Ice Creams Sold |
+| --------- | --------------: |
+| Monday    |              20 |
+| Tuesday   |              22 |
+| Wednesday |              19 |
+| Thursday  |              21 |
+| Friday    |              20 |
+| Saturday  |         **500** |
+
+Selling 500 on one day while all other days are around 20 is unusual.
+
+🍦 500 is an outlier.
+
+========
+
+In Your Dataset
+
+Suppose your quantity_sold column is:
+
+| Day | Quantity Sold |
+| --- | ------------: |
+| 1   |            52 |
+| 2   |            49 |
+| 3   |            55 |
+| 4   |            58 |
+| 5   |       **300** |
+| 6   |            60 |
+| 7   |            61 |
+
+
+Almost every value is around 50–60, but 300 is much higher.
+
+👉 300 is an outlier.
+
+============
+
+Imagine you are the class teacher and you ask all students to write their exam marks.
+
+| Student |   Marks |
+| ------- | ------: |
+| Arun    |      78 |
+| Bala    |      82 |
+| Chitra  |      80 |
+| Divya   |      79 |
+| Eshan   |      81 |
+| Farhan  |      77 |
+| Gokul   | **250** |
+
+
+🤔 Do you notice something strange?
+
+All students scored between 77 and 82, but one student has 250 marks.
+
+Can an exam out of 100 have 250 marks? ❌ No.
+
+So, 250 is an outlier because it is very different from the rest of the values.
+
+==========
+
+Height of Students
+
+| Student | Height (cm) |
+| ------- | ----------: |
+| A       |         140 |
+| B       |         142 |
+| C       |         141 |
+| D       |         139 |
+| E       |     **250** |
+
+
+Everyone is around 140 cm, but one student is 250 cm.
+
+👉 250 cm is an outlier.
+
+=========
+
+Why Do We Find Outliers?
+
+Outliers can happen because:
+
+Someone entered the wrong number (typing mistake)
+A machine or sensor made an error
+A very unusual event happened
+The data was recorded incorrectly
+
+For example:
+
+You sold 52 items, but someone accidentally typed:
+
+520
+
+Now 520 becomes an outlier.
+
+===========
+
+What Does IQR Do?
+
+IQR acts like a teacher checking the class.
+
+It looks at all the values and asks:
+
+"Does this number look very different from the others?"
+
+If the answer is Yes, it marks it as an outlier.
+
+=======
+
